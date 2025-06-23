@@ -1,6 +1,6 @@
 # mlx-kb-whisper
 MLX version of the KBLAB/kb-whisper model on HuggingFace.
-KBLAB/kb-whisper is a suite of Whisper models trained onSwedish speech by The National Library of Sweden. 
+KBLAB/kb-whisper is a suite of Whisper models trained on Swedish speech by The National Library of Sweden. 
 mlx-whisper is a speech-to-text framework for Apple Silicon. 
 
 This project contains example code and instructions for converting a kb-whisper model for use with mlx.
