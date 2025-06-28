@@ -25,12 +25,18 @@ uv sync
    ```
 2. Run the conversion script. The script takes the path to the HuggingFace model, for example `KBLab/kb-whisper-large-hf` and the path to save the converted model.
    ```
-   python mlx-examples/whisper/convert.py --hf-path KBLab/kb-whisper-large-hf -o kb-whisper-large-mlx
+   uv run python mlx-examples/whisper/convert.py --torch-name-or-path KBLab/kb-whisper-large --mlx-path kb-whisper-large-mlx
    ```
 
 ## Run the converted model
 
 To run the converted model, use the `main.py` script. You need to provide an input audio file and an output file.
+
+### Parameters:
+* `<input_audio_file>`: Path to the input audio file.
+* `<output_file>`: Path to save the output transcription.
+* `--language`: (Optional) Language code of the audio (e.g., `en` for English, `sv` for Swedish). If not provided, the model will attempt to detect the language.
+* `--format`: (Optional) Output format, either `json` (default) or `txt`.
 
 ```bash
 uv run python main.py <input_audio_file> <output_file> --language <language_code> --format <json_or_txt>
