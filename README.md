@@ -33,13 +33,13 @@ uv sync
 To run the converted model, use the `main.py` script. You need to provide an input audio file and an output file.
 
 ```bash
-python main.py <input_audio_file> <output_file> --language <language_code> --format <json_or_txt>
+uv run python main.py <input_audio_file> <output_file> --language <language_code> --format <json_or_txt>
 ```
 
 For example:
 
 ```bash
-python main.py audio.mp3 output.json --language sv --format json
+uv run python main.py audio.mp3 output.json --language sv --format json
 ```
 
 ## Read more
