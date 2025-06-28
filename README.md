@@ -5,6 +5,12 @@ mlx-whisper is a speech-to-text framework for Apple Silicon.
 
 This project contains example code and instructions for converting a kb-whisper model for use with mlx.
 
+## Prerequisites
+
+*   **Operating System**: macOS (Apple Silicon is recommended for optimal performance).
+*   **Homebrew**: A package manager for macOS. Install it by following instructions on [brew.sh](https://brew.sh/).
+*   **uv and FFmpeg**: Install them via Homebrew: `brew install uv ffmpeg`.
+
 ## Getting Started
 To get started with this project, clone the repository:
 ```
